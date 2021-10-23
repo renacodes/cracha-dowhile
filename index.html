@@ -1,10 +1,12 @@
 <!--
   Início do projeto Crachá DoWhile, evento NLWHeat 2021
-  desenvolvido por Angelo Rena aka renacodes, com base no projeto original da Rocketseat :)
+  desenvolvido por Angelo Rena aka renacodes, seguindo o projeto original da Rocketseat :)
 -->
 <!DOCTYPE html>
-<html>
+<html lang="pt_BR">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Angelo Rena - DoWhile 2021</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,6 +17,7 @@
     />
   </head>
   <body>
+
     <main>
       <div class="container">
         <div class="avatar">
@@ -24,14 +27,20 @@
               alt='Selo Rocketseat branco, texto: "Build the Future"'
           /></span>
 
-          <img src="https://lorempixel.com/185/185/people/" alt="Angelo Rena" id="avatar" />
+          <img
+            src="https://lorempixel.com/185/185/people/"
+            alt="Angelo Rena"
+            id="avatar"
+          />
         </div>
-        <!-- usamos o id para acessar elementos individuais pela dom-->
         <h1 id="username">h</h1>
-        <a id = "githubProfile" href="http://github.com/"
-          ><img src="img/github 2.svg" alt="GitHub" /> <span id="userLogin">@</span></a
+        <a id="githubProfile" href="http://github.com/"
+          ><img src="img/github 2.svg" alt="GitHub" />
+          <span id="userLogin">@</span></a
         >
-        <p id="userBio">Estudante de design e futuro desenvolvedor front-end.</p>
+        <p id="userBio">
+          Estudante de design e futuro desenvolvedor front-end.
+        </p>
 
         <ul id="social">
           <li class="instagram">
@@ -45,13 +54,13 @@
             /></a>
           </li>
           <li class="facebook">
-            <a href="http://facebook.com/" target="_blank"
+               <a href="http://facebook.com/" target="_blank"
               ><img src="img/facbook.svg" alt="Facebook"
             /></a>
           </li>
         </ul>
       </div>
     </main>
-  <script src='main.js'></script>
+    <script src="main.js"></script>
   </body>
 </html>
