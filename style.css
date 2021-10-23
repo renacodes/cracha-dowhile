@@ -17,9 +17,10 @@ body {
 }
 
 main {
-  background: url(img/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(img/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
   /*chama a variável gray*/
   color: var(--gray);
 }
@@ -80,4 +81,37 @@ ul {
   /*gap e justify-content são específicos do display flex*/
   gap: 0.5rem;
   justify-content: center;
+}
+
+@media (min-width: 720px) {
+  main {
+    background: url(img/desktop.svg) no-repeat center/cover;
+  }
+
+  a:hover {
+    color: #8383ed;
+  }
+  @keyframes slideFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.container {
+  margin-top: 13rem;
+  animation: 1s ease-out 0s 1 slideFromBottom;
+}
+
+ul li a {
+  transition: transform 0.5s;
+}
+
+ul li a:hover {
+  transform: translateY(-5px);
 }
